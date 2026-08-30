@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 Page Not Found - Muhammad Yaseen Portfolio.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2280%22 font-family=%22sans-serif%22 font-weight=%22800%22 fill=%22%236366f1%22&gt;MY&lt;/text&gt;&lt;/svg&gt;">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css?v=18">
+
+    <title>404 - Page Not Found | Muhammad Yaseen</title>
+
+    <style>
+        .error-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 5;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .error-card {
+            background: rgba(15, 18, 29, 0.45);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: var(--glass-blur);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(99, 102, 241, 0.1);
+            animation: errorFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes errorFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
+            background: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #d946ef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.3));
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .error-desc {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Page Preloader -->
+    <div id="preloader" class="preloader-overlay">
+        <div class="preloader-content">
+            <div class="preloader-logo">&lt;MY<span class="logo-accent">/&gt;</span></div>
+            <div class="preloader-bar-bg"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar (Simplified) -->
+    <header class="navbar" id="main-header" style="background: rgba(8, 9, 13, 0.9);">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="nav-logo-link" aria-label="Muhammad Yaseen Home">
+                <span class="logo-accent">&lt;</span>MY<span class="logo-accent">/&gt;</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="error-section">
+            <canvas id="hero-canvas" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1; pointer-events:none;"></canvas>
+            
+            <div class="error-card">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Let's get you back on track.</p>
+                <a href="index.html" class="btn btn-primary" style="display: inline-flex; justify-content: center; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

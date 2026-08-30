@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local & Temp Files
+scratch/
+.tempmediaStorage/
+*.log
+.DS_Store
+Thumbs.db
+
+# Production & Environments
+.env
+.env.local
+.vscode/
+.idea/
