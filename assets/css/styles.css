@@ -259,10 +259,6 @@ img {
     align-items: center;
 }
 
-/* Faded Watermark Removed for Clean, Uncluttered Typography */
-.section-header::before {
-    display: none !important;
-}
 
 /* Eyebrow Tag Wrapper & Accent Lines */
 .section-tag-wrapper {
