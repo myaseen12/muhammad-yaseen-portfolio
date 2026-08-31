@@ -243,6 +243,12 @@ img {
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 32px, 1340px);
+    }
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 56px; /* Extra spacing for visual breathing room */
