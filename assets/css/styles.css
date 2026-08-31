@@ -259,22 +259,9 @@ img {
     align-items: center;
 }
 
-/* Faded Watermark Behind Header Content */
+/* Faded Watermark Removed for Clean, Uncluttered Typography */
 .section-header::before {
-    content: attr(data-watermark);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(4.5rem, 12vw, 9.5rem);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.02); /* Extremely subtle depth watermark */
-    z-index: -1;
-    pointer-events: none;
-    user-select: none;
-    white-space: nowrap;
+    display: none !important;
 }
 
 /* Eyebrow Tag Wrapper & Accent Lines */
